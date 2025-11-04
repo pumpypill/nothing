@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTHING COIN - Own Nothing. Be Happy.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="logo.png" alt="Nothing Coin Logo" class="logo" style="width: 150px; height: auto;">
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#prophecy" class="nav-link">The Prophecy</a></li>
+                    <li><a href="#features" class="nav-link">Why Nothing</a></li>
+                    <li><a href="#transformation" class="nav-link">The Future</a></li>
+                    <li><a href="#buy" class="nav-link">Buy Nothing</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="warning-banner">
+        🚨 URGENT: THE FUTURE IS HERE. YOU WILL OWN NOTHING. BE PREPARED. 🚨
+        <div id="countdown" style="font-size: 0.9rem; margin-top: 5px;">
+            Time until you own nothing: <span id="timer">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Void particles for atmospheric effect -->
+    <div class="void-particles" id="voidParticles"></div>
+
+    <div class="hero" id="hero">
+        <div class="floating-void"></div>
+        <div class="hero-image-container">
+            <img src="own_nothing.webp" alt="You will own nothing and be happy - World Economic Forum prediction" class="hero-image" loading="eager">
+        </div>
+        <h1 class="glitch">NOTHING COIN</h1>
+        <p class="subtitle">Own Nothing. Be Happy.</p>
+        <p class="dramatic-text">The <span class="highlight">ONLY</span> token that prepares you for the inevitable future</p>
+        <p class="dramatic-text">While others fear the prophecy, <span class="highlight">we profit from it</span></p>
+        <p class="dramatic-text">Don't wait for 2030 - <strong>FRONTRUN THE FUTURE TODAY</strong></p>
+        
+        <button class="cta-button" onclick="buyNothing()">BUY NOTHING NOW</button>
+        <button class="cta-button" onclick="buyNothing()">EMBRACE THE VOID</button>
+        
+    </div>
+
+    <div class="section">
+        <div class="prophecy" id="prophecy">
+            <h2>THE PROPHECY REVEALED</h2>
+            <p>In 2016, the World Economic Forum released a video predicting life in 2030, featuring the now-infamous phrase: <strong>"You will own nothing and be happy."</strong> Originally intended to showcase a sharing economy utopia, the statement became a lightning rod for fears about corporate control and individual freedom. What began as technocratic optimism morphed into internet folklore, spawning countless memes and conspiracy theories. The phrase captured growing anxieties about subscription services, unaffordable housing, and the erosion of ownership rights.</p>
+            <p>While others fear this future, <span class="highlight">NOTHING COIN</span> holders are already there. NOTHING COIN transforms this dystopian prophecy into opportunity - if ownership is ending anyway, why not profit from the transition?</p>
+            <p>Why wait for the inevitable when you can <strong>FRONTRUN THE FUTURE</strong>?</p>
+        </div>
+
+        <h2 class="dramatic-text" id="features">Why <span class="highlight">NOTHING</span> is Everything</h2>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🏠 Housing Crisis? SOLVED!</h3>
+                <p>Can't afford a house? Perfect! You're already living the NOTHING lifestyle. Buy NOTHING and be ahead of the curve!</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>💳 Subscription Fatigue? CURED!</h3>
+                <p>Tired of Netflix, Spotify, Adobe? With NOTHING, you own nothing digitally AND financially. Double win!</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>🔧 Right to Repair? IRRELEVANT!</h3>
+                <p>Can't fix what you don't own. NOTHING holders are immune to planned obsolescence!</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>📈 Economic Uncertainty? HEDGED!</h3>
+                <p>Market crash? Inflation? Recession? NOTHING is recession-proof because it IS nothing!</p>
+            </div>
+        </div>
+
+        <div class="prophecy">
+            <h2>THE SIGNS ARE EVERYWHERE</h2>
+            <ul style="text-align: left; margin: 20px 0;">
+                <li>🏘️ Homeownership rates plummeting</li>
+                <li>💾 Software moving to subscriptions</li>
+                <li>🚗 Car sharing replacing ownership</li>
+                <li>📱 Phone leasing programs everywhere</li>
+                <li>☁️ Everything moving to "the cloud"</li>
+            </ul>
+            <p><strong>The writing is on the wall. The question is: Will you be ready?</strong></p>
+        </div>
+
+        <div class="prophecy" id="transformation">
+            <h2>THE GREAT TRANSFORMATION EXPLAINED</h2>
+            <p>The World Economic Forum didn't just make a prediction - they revealed the <span class="highlight">INEVITABLE FUTURE</span>.</p>
+            <p>By 2030, the sharing economy will have consumed everything:</p>
+            <ul style="text-align: left; margin: 20px 0;">
+                <li>🏠 <strong>Housing:</strong> Permanent rentals, no ownership</li>
+                <li>🚗 <strong>Transportation:</strong> Ride-sharing and car subscriptions only</li>
+                <li>💻 <strong>Technology:</strong> Everything-as-a-Service (EaaS)</li>
+                <li>👕 <strong>Clothing:</strong> Fashion rental subscriptions</li>
+                <li>🍽️ <strong>Food:</strong> Meal delivery, no grocery ownership</li>
+                <li>🎵 <strong>Entertainment:</strong> Streaming only, no physical media</li>
+            </ul>
+            <p><strong>The question isn't IF this will happen - it's whether you'll be ready!</strong></p>
+        </div>
+
+        <div class="prophecy">
+            <h2>FROM CONSPIRACY TO REALITY</h2>
+            <p>What started as an economic prediction became an internet phenomenon because people recognized the truth:</p>
+            <div style="text-align: left; margin: 20px 0;">
+                <h3 style="color: #ff0000;">🔍 The Evidence is Everywhere:</h3>
+                <p><strong>Subscription Takeover:</strong> Netflix killed Blockbuster. Spotify eliminated CD ownership. Adobe moved to Creative Cloud subscriptions.</p>
+                <p><strong>Housing Crisis:</strong> Millennials can't buy homes. Gen Z embraces "renting forever." Homeownership rates plummet.</p>
+                <p><strong>Corporate Control:</strong> You don't own your iPhone - Apple does. You license software, don't own it. Your car has subscriptions for heated seats.</p>
+                <p><strong>Digital Everything:</strong> Books? Kindle. Music? Streaming. Photos? Cloud storage. Games? Digital downloads with licensing.</p>
+            </div>
+            <p>The meme became real because <span class="highlight">IT WAS ALREADY HAPPENING</span>.</p>
+        </div>
+
+        <div class="prophecy">
+            <h2>THE HAPPINESS EQUATION</h2>
+            <p>But here's the genius part - the WEF said you'd be <span class="highlight">HAPPY</span> about it!</p>
+            <div style="text-align: left; margin: 20px 0;">
+                <h3 style="color: #ff0000;">🧠 The Psychology of Owning Nothing:</h3>
+                <p><strong>No Maintenance Stress:</strong> Can't break what you don't own!</p>
+                <p><strong>No Storage Problems:</strong> Minimalism is trendy anyway!</p>
+                <p><strong>No Upgrade Anxiety:</strong> Always get the latest version!</p>
+                <p><strong>No Depreciation Worry:</strong> Your assets can't lose value!</p>
+                <p><strong>Maximum Flexibility:</strong> Move anywhere, change everything!</p>
+            </div>
+            <p>NOTHING COIN holders understand: <strong>Happiness = Lower Expectations + Zero Ownership Anxiety</strong></p>
+        </div>
+
+        <div class="dramatic-text">
+            <h2>JOIN THE <span class="highlight">NOTHING</span> REVOLUTION</h2>
+            <p>Don't be caught owning something when the great reset happens.</p>
+            <p>Be a pioneer. Be prepared. Be profitable.</p>
+            <p><span class="highlight">Own NOTHING before NOTHING owns you.</span></p>
+        </div>
+
+        <div style="text-align: center; margin: 50px 0;" id="buy">
+            <button class="cta-button" onclick="buyNothing()">🚀 BUY NOTHING NOW</button>
+            <button class="cta-button" onclick="joinWaitlist()">📝 JOIN WAITLIST</button>
+            <button class="cta-button" onclick="shareVoid()">📢 SPREAD THE VOID</button>
+        </div>
+
+        <div class="prophecy">
+            <h2>TECHNICAL SPECIFICATIONS</h2>
+            <p><strong>Total Supply:</strong> ∞ (Infinite, like the void)</p>
+            <p><strong>Blockchain:</strong> The Blockchain of Nothingness</p>
+            <p><strong>Use Case:</strong> Preparing for inevitable ownership abolition</p>
+            <p><strong>Utility:</strong> Peace of mind in a subscription-based dystopia</p>
+            <p><strong>Backing:</strong> The collective anxiety of millennials who can't afford houses</p>
+        </div>
+    </div>
+
+    <script>
+        function buyNothing() {
+            window.open('https://axiom.trade/@2paid', '_blank');
+        }
+
+        function ownNothing() {
+            alert("Welcome to enlightenment! You now own NOTHING and are officially prepared for 2030!");
+        }
+
+        function joinWaitlist() {
+            const responses = [
+                "You've joined the waitlist for NOTHING! \n\nExpected wait time: ∞\nPosition in queue: Undefined\nStatus: Successfully owning nothing",
+                "Congratulations! You're now #42,069 in line for NOTHING! \n\nEstimated wait: Until heat death of universe\nPerk: Already practicing for the void",
+                "Welcome to the NOTHING waitlist! \n\nYour number: [REDACTED]\nQueue position: Somewhere between despair and enlightenment",
+                "NOTHING waitlist confirmed! \n\nExpected delivery: When pigs fly (which you won't own)\nShipping: Free (because it's nothing)"
+            ];
+            alert(responses[Math.floor(Math.random() * responses.length)]);
+        }
+
+        function shareVoid() {
+            const messages = [
+                "Sharing the void spreads the message! Tell everyone about the inevitability of owning NOTHING!",
+                "The void appreciates your evangelism! \n\nShares completed: ∞\nConverts to nothingness: Calculating...",
+                "VIRAL ALERT: The nothing-ness is spreading! \n\nYou've successfully infected 0 people with existential dread",
+                "Void sharing protocol activated! \n\nReach: Global\nImpact: Immeasurable\nOwnership transferred: 0"
+            ];
+            alert(messages[Math.floor(Math.random() * messages.length)]);
+        }
+
+        function toggleMobileMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            navMenu.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                document.querySelector('.nav-menu').classList.remove('active');
+                document.querySelector('.mobile-menu-toggle').classList.remove('active');
+            });
+        });
+
+        // Add some dramatic effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Random glitch effects
+            setInterval(() => {
+                const elements = document.querySelectorAll('.glitch');
+                elements.forEach(el => {
+                    el.style.textShadow = `${Math.random() * 0.1}em 0 0 red, -${Math.random() * 0.1}em -${Math.random() * 0.05}em 0 cyan`;
+                });
+            }, 100);
+
+            // Countdown to 2030
+            function updateCountdown() {
+                const target = new Date('2030-01-01T00:00:00');
+                const now = new Date();
+                const diff = target - now;
+                
+                if (diff > 0) {
+                    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                    
+                    document.getElementById('timer').textContent = 
+                        `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                } else {
+                    document.getElementById('timer').textContent = "YOU NOW OWN NOTHING!";
+                }
+            }
+            
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+
+            // Create floating void particles
+            function createVoidParticle() {
+                const particle = document.createElement('div');
+                particle.className = 'void-particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 8 + 's';
+                particle.style.animationDuration = (8 + Math.random() * 4) + 's';
+                
+                document.getElementById('voidParticles').appendChild(particle);
+                
+                // Remove particle after animation
+                setTimeout(() => {
+                    if (particle.parentNode) {
+                        particle.parentNode.removeChild(particle);
+                    }
+                }, 12000);
+            }
+
+            // Create particles periodically
+            setInterval(createVoidParticle, 1000);
+
+            // Add click effects to CTA buttons
+            document.querySelectorAll('.cta-button').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    // Create ripple effect
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    ripple.style.cssText = `
+                        position: absolute;
+                        border-radius: 50%;
+                        background: rgba(255,255,255,0.6);
+                        transform: scale(0);
+                        animation: ripple 0.6s linear;
+                        width: ${size}px;
+                        height: ${size}px;
+                        left: ${x}px;
+                        top: ${y}px;
+                        pointer-events: none;
+                    `;
+                    
+                    this.style.position = 'relative';
+                    this.style.overflow = 'hidden';
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        if (ripple.parentNode) {
+                            ripple.parentNode.removeChild(ripple);
+                        }
+                    }, 600);
+                });
+            });
+        });
+
+        // Add ripple animation to CSS
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
