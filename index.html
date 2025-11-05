@@ -29,6 +29,14 @@
         </div>
     </header>
 
+    <div class="contract-banner">
+        <div class="contract-content">
+            <span class="contract-label">CONTRACT ADDRESS:</span>
+            <span class="contract-address" id="contractAddress">JAPrAa1xmEggkpi42wtTc8qSMkedAnvHheToqNeu6SYv</span>
+            <button class="copy-button" onclick="copyContract()" title="Copy to clipboard">📋</button>
+        </div>
+    </div>
+
     <div class="warning-banner">
         🚨 URGENT: THE FUTURE IS HERE. YOU WILL OWN NOTHING. BE PREPARED. 🚨
         <div id="countdown" style="font-size: 0.9rem; margin-top: 5px;">
@@ -307,6 +315,54 @@
                 "Void sharing protocol activated! \n\nReach: Global\nImpact: Immeasurable\nOwnership transferred: 0"
             ];
             alert(messages[Math.floor(Math.random() * messages.length)]);
+        }
+
+        function copyContract() {
+            const contractAddress = document.getElementById('contractAddress').textContent;
+            
+            // Try the modern clipboard API first
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(contractAddress).then(() => {
+                    showCopySuccess();
+                }).catch(() => {
+                    fallbackCopy(contractAddress);
+                });
+            } else {
+                fallbackCopy(contractAddress);
+            }
+        }
+
+        function fallbackCopy(text) {
+            // Fallback for older browsers or non-HTTPS
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.left = '-999999px';
+            textArea.style.top = '-999999px';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showCopySuccess();
+            } catch (err) {
+                alert('Contract Address: ' + text + '\n\nPlease copy manually.');
+            }
+            
+            document.body.removeChild(textArea);
+        }
+
+        function showCopySuccess() {
+            const button = document.querySelector('.copy-button');
+            const originalText = button.textContent;
+            button.textContent = '✅';
+            button.style.background = '#00ff00';
+            
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.style.background = '#ff0000';
+            }, 2000);
         }
 
         function toggleMobileMenu() {
